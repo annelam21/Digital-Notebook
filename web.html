@@ -1,0 +1,74 @@
+<html>
+ 
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://www.desmos.com/api/v1.5/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+ 
+<body>
+    <div id="toolBox">
+        <!-- Pencil/Eraser tool -->
+        <button id="pencil" onclick="onOff()" class="tools">Pencil</button><br><br>
+ 
+        <!-- Select tool -->
+        <button id="selectBtn" onclick="selec()" class="tools">Select: Off</button><br>
+ 
+        <!-- Pen width -->
+        <label for="drawing-line-width" id="lineLabel">Line width:</label>
+        <span id="penWidth">3</span><input type="range" value="3" min="1" max="100" id="drawing-line-width"
+            class="tools"><br>
+ 
+        <!-- Pen color -->
+        <label for="drawing-color" id="lineColorLabel">Line color:</label>
+        <input type="color" value="#5FB4CD" id="drawing-color" class="tools"><br>
+ 
+        <!-- Create a text box -->
+        <button id="tBox" class="tools" onclick="textBox()">Text Box</button>
+ 
+        <!-- Create a delete text box option -->
+        <button id="dBox" class="tools" onclick="delBox()">Delete</button>
+    </div>
+ 
+    <!-- Create a button for calculator-->
+    <!-- <button id="calculadora" class="tools" onclick="calc()">Calculator</button>
+        <div class="tools" id="calcBox">
+            <input class="tools" type="text" id="calcInput"><br>
+            <button class="tools" onclick="calc0()">0</button>
+            <button class="tools" onclick="calc1()">1</button>
+            <button class="tools" onclick="calc2()">2</button>
+            <button class="tools" onclick="calc3()">3</button>
+            <button class="tools" onclick="calc4()">4</button>
+            <button class="tools" onclick="calc5()">5</button>
+            <button class="tools" onclick="calc6()">6</button>
+            <button class="tools" onclick="calc7()">7</button>
+            <button class="tools" onclick="calc8()">8</button>
+            <button class="tools" onclick="calc9()">9</button>
+            <button class="tools" onclick="par1()">(</button>
+            <button class="tools" onclick="par2()">)</button>
+            <button class="tools" onclick="del()">delete</button>
+            <button class="tools" onclick="clearVal()">clear</button>
+            <button class="tools" onclick="addNum()">+</button>
+            <button class="tools" onclick="subtractNum()">-</button>
+            <button class="tools" onclick="multiplyNum()">x</button>
+            <button class="tools" onclick="divideNum()">÷</button>
+            <button class="tools" onclick="weLovePi()">π</button>
+            <button class="tools" onclick="calcResults()">=</button>
+            <p id="calcResults">Results:</p>
+            <p id="history"></p><br>
+        </div> -->
+ 
+    <!-- Open Graphing Calculator -->
+    <button id="graphCalculadora" class="tools" onclick="graphCalc()">Graphing Calculator</button>
+    <div class="tools" id="gCalc"></div>
+ 
+    <!-- link script.js to web.html-->
+    <script src="script.js"></script>
+ 
+</body>
+ 
+</html>

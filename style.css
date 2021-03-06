@@ -1,3 +1,154 @@
-body{
+body {
     margin: 0;
+    overflow: hidden;
+    font-family: 'PT Sans', sans-serif;
+    user-select: none;
+}
+ 
+button {
+    font-family: 'PT Sans', sans-serif;
+}
+ 
+select {
+    font-family: 'PT Sans', sans-serif;
+}
+ 
+textarea {
+    font-family: 'PT Sans', sans-serif;
+}
+ 
+#canvasID {
+    z-index: -5;
+}
+ 
+.medium {
+    z-index: -1;
+}
+ 
+.bgWhite {
+    background-image: url('white.png');
+}
+ 
+.bgBlack {
+    background-image: url('black.png');
+}
+ 
+.bgLined {
+    background-image: url('lined.png');
+}
+ 
+.bgGraph {
+    background-image: url('graph5.png');
+}
+ 
+/* #calcBox {
+    position: relative;
+    border-style: solid;
+    border-width: 3px;
+    background-color: papayawhip;
+    width: 250px;
+    height: 250px;
+    visibility: hidden;
+    overflow: scroll;
+    top: -51px;
+    left: 84%;
+} */
+ 
+.textDiv {
+    width: 20px;
+    padding-top: 20px;
+    cursor: move;
+    background-color: white;
+    border: none;
+    position: fixed;
+}
+ 
+textarea {
+    background-color: white;
+}
+ 
+#toolBox {
+    width: 20%;
+    height: 25%;
+    position: absolute;
+    top: 5%;
+    left: 0.75%;
+}
+ 
+#pencil {
+    position: absolute;
+    top: 2%;
+    left: 0%;
+}
+ 
+#selectBtn {
+    position: absolute;
+    top: 18.5%;
+    left: 0%;
+}
+ 
+#lineLabel {
+    background-color: white;
+    position: absolute;
+    top: 35%;
+    left: 0%;
+}
+ 
+#penWidth {
+    background-color: white;
+    position: absolute;
+    top: 35%;
+    left: 29%;
+}
+ 
+#drawing-line-width {
+    position: absolute;
+    top: 35%;
+    left: 38.5%;
+}
+ 
+#lineColorLabel {
+    background-color: white;
+    position: absolute;
+    top: 49.5%;
+    left: 0%;
+}
+ 
+#drawing-color {
+    position: absolute;
+    top: 49%;
+    left: 27%;
+}
+ 
+#tBox {
+    position: absolute;
+    top: 64%;
+    left: 0%;
+}
+ 
+#dBox {
+    position: absolute;
+    top: 65%;
+    left: 24.5%;
+}
+ 
+#gCalc {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    visibility: hidden;
+    top: 8%;
+    left: 60%;
+}
+ 
+/* #calculadora{
+    position: relative;
+    top: -79px;
+    left: 94.75%;
+} */
+ 
+#graphCalculadora {
+    position: absolute;
+    top: 4%;
+    left: 90.85%;
 }

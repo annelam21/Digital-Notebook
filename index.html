@@ -1,11 +1,53 @@
 <html>
     <head>
-        <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.2.0/fabric.min.js" integrity="sha512-Pdu3zoEng2TLwwjnDne3O7zaeWZfEJHU5B63T+zLtME/wg1zfeSH/1wrtOzOC37u2Y1Ki8pTCdKsnbueOlFlMg==" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+        <style>
+            body{
+                font-family: 'PT Sans', sans-serif;
+            }
+            #introBox{
+                width: 50%;
+                height: auto;
+                margin: auto;
+            }
+            h1{
+                text-align: center;
+            }
+            h3{
+                text-align: center;
+            }
+            h4{
+                text-align: center;
+            }
+            #authors{
+                text-align: center;
+            }
+            button{
+                font-family: 'PT Sans', sans-serif;
+                margin: 0 auto;
+                display: block;
+            }
+            p{
+                line-height: 175%;
+            }
+        </style>
     </head>
     <body>
-        <!-- <button onclick="medium()">Select Medium</button> -->
-    </body>
+        <div id="introBox">
+        <h1>Math Calculator Note Taker</h1>
+        <p id="authors">Made by Loelle Lam & Mikaela Javillo</p>
+        <h3>Instructions:</h3>
+        <p>1) The pencil and eraser tool are found in the same button. The label on the button shows what mode you are currently on.</p>
+        <p>2) The select button allows you to disable drawing and erasing. Why would you want to do this? When you use the calculator you do not want to accidentally erase or draw over the notes you took underneath. The label on the select tool will indicate if it is on or off.</p>
+        <p>3) The textbox tool can be moved by dragging on the little square on the top left of every textbox you create. If you want to delete a textbox, hover on the textbox you want to delete then proceed to click the delete button.</p>
+        <h4>Ready? Click the button below to start.</h4>
+        <button onclick="startUp()">Go</button>
+    </div> 
+    <script>
+        //load a note taking page
+        function startUp(){
+            location.href = "web.html";
+        }
+    </script>
+</body>
 </html>
